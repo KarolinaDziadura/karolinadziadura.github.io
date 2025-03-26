@@ -1,167 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Karolina Dziadura – Astrophysicist, researcher, science communicator." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Karolina Dziadura</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8fafc;
-      color: #1a202c;
-    }
-    header {
-      background-color: #e7f5ec;
-      padding: 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #22543d;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      background-color: #edf2f7;
-      color: #4a5568;
-    }
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #b7e1cd;
-      display: block;
-      margin: 20px auto;
-    }
-    .circle-logo {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-      vertical-align: middle;
-      margin-left: 10px;
-    }
-    .about-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    .about-text {
-      flex: 1 1 55%;
-    }
-    .gif-wrapper {
-      flex: 1 1 40%;
-      text-align: center;
-    }
-    .gif-wrapper img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 12px;
-    }
-    @media (max-width: 768px) {
-      .about-wrapper {
-        flex-direction: column;
-      }
-    }
-    h2 {
-      color: #2f855a;
-    }
-    a {
-      color: #2f855a;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 </head>
-<body>
-  <header>
-    <h1>Karolina Dziadura, PhD</h1>
-    <p>Postdoctoral Researcher at the Minor Planet Center, Center for Astrophysics | Harvard & Smithsonian</p>
-    <nav>
-      <a href="#about">O mnie</a>
-      <a href="#research">Research</a>
-      <a href="#media">Media / Outreach</a>
-    </nav>
-  </header>
+<body class="is-preload">
 
-  <section id="about">
-    <img src="Karolina_fot.jpg" alt="Karolina Dziadura" class="profile-pic" />
-    <div class="about-wrapper">
-      <div class="about-text">
-        <h2>O mnie</h2>
-        <p>Jestem badaczką zajmującą się mechaniką nieba, astrometrią i orbitami planetoid. Pracuję jako postdoc w Minor Planet Center przy Center for Astrophysics | Harvard & Smithsonian. Prowadzę także podcast <a href="https://open.spotify.com/show/4d5yHGs8ej1gTGt0pUtCSH?si=a221b03613e44acc" target="_blank">Good Night Podcast</a> oraz audycję radiową w każdą sobotę o 13:00 w <a href="https://www.afera.com.pl/" target="_blank">Radio Afera</a>.</p>
-        <p>Kontakt: <a href="mailto:karolina.dziadura@cfa.harvard.edu">karolina.dziadura@cfa.harvard.edu</a></p>
+  <!-- Sidebar -->
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
         <ul>
-          <li><a href="https://scholar.google.com/citations?user=DjDA58AAAAAJ&hl=pl&oi=ao">Google Scholar</a></li>
-          <li><a href="https://orcid.org/0000-0001-7562-9661">ORCID</a></li>
-          <li><a href="https://www.researchgate.net/profile/Karolina-Dziadura">ResearchGate</a></li>
-          <li><a href="https://www.cfa.harvard.edu/people/karolina-dziadura">CfA Profile</a></li>
+          <li><a href="#intro">O mnie</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#media">Media / Outreach</a></li>
+          <li><a href="#cv">CV</a></li>
         </ul>
-      </div>
-      <div class="gif-wrapper">
-        <img src="Asteroid.gif" alt="Asteroid Animation">
-      </div>
+      </nav>
     </div>
   </section>
 
-  <section id="research">
-    <h2>Research</h2>
-    <p>Pobierz moje CV w PDF:</p>
-    <p><a href="Resume_Dziadura.pdf" download>Pobierz CV</a></p>
+  <!-- Wrapper -->
+  <div id="wrapper">
 
-    <h3>5 wybranych publikacji:</h3>
-    <ul>
-      <li>Detection of the Yarkovsky Effect Using Gaia Astrometry</li>
-      <li>The Photocenter-Barycenter Offset of Near-Earth Objects</li>
-      <li>Yarkovsky Drift Detectability Using Gaia DR2 Asteroid Astrometry</li>
-      <li>Computing the Yarkovsky Effect for Asteroids in Gaia DR3</li>
-      <li>Determining Asteroid Sizes Based on Stellar Occultations</li>
-    </ul>
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+      <div class="inner">
+        <h1>Karolina Dziadura, PhD</h1>
+        <p>Postdoctoral Researcher at the Minor Planet Center, Center for Astrophysics | Harvard & Smithsonian</p>
+        <p>Jestem astronomką zajmującą się orbitami planetoid, mechaniką nieba i analizą danych astrometrycznych. Współpracuję z zespołem Minor Planet Center w Cambridge (USA), analizując dane z misji Gaia.</p>
+        <p>Email: <a href="mailto:karolina.dziadura@cfa.harvard.edu">karolina.dziadura@cfa.harvard.edu</a></p>
+        <ul class="actions">
+          <li><a href="https://scholar.google.com/citations?user=DjDA58AAAAAJ&hl=pl&oi=ao" class="button">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0001-7562-9661" class="button">ORCID</a></li>
+          <li><a href="https://www.researchgate.net/profile/Karolina-Dziadura" class="button">ResearchGate</a></li>
+          <li><a href="https://www.cfa.harvard.edu/people/karolina-dziadura" class="button">CfA Profile</a></li>
+        </ul>
+        <div class="image"><img src="Karolina_fot.jpg" alt="Karolina Dziadura"></div>
+      </div>
+    </section>
 
-    <h3>5 wybranych konferencji:</h3>
-    <ul>
-      <li>NASA SBAG Meeting (2025)</li>
-      <li>Asteroids, Comets, Meteors Conference – Flagstaff (2023)</li>
-      <li>European Astronomical Society Annual Meeting (2023)</li>
-      <li>Europlanet Science Congress (2022)</li>
-      <li>AAS Division for Planetary Sciences Meeting (2021)</li>
-    </ul>
-  </section>
+    <!-- Research -->
+    <section id="research" class="wrapper style2 spotlights">
+      <section>
+        <div class="content">
+          <div class="inner">
+            <h2>Research</h2>
+            <p>Moje badania koncentrują się na analizie efektu Jarkowskiego, fotocentryczności i dokładności orbit planetoid. Wykorzystuję dane z misji Gaia, obserwacje naziemne oraz narzędzia takie jak OrbFit.</p>
+            <h3>Wybrane publikacje:</h3>
+            <ul>
+              <li>Dziadura et al. 2025 – A&A – Gaia DR3 i FPR, efekt Jarkowskiego</li>
+              <li>Dziadura et al. 2023 – A&A – Gęstości planetoid z Gaia</li>
+              <li>Dziadura et al. 2022 – Icarus – Najlepsze kandydatki Jarkowskiego</li>
+              <li>Leśniewska et al. 2022 – ApJS – GRB i ISM</li>
+              <li>Podlewska-Gaca et al. 2020 – A&A – Parametry mas planetoid</li>
+            </ul>
+            <h3>Wybrane konferencje:</h3>
+            <ul>
+              <li>NASA SBAG Meeting – 2025</li>
+              <li>Asteroids, Comets, Meteors – Flagstaff 2023</li>
+              <li>EAS Annual Meeting – Kraków 2023</li>
+              <li>Europlanet Science Congress – 2022</li>
+              <li>DPS AAS Meeting – 2021</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
 
-  <section id="media">
-    <h2>Media / Outreach</h2>
-    <p>Tworzę komiksy naukowe, podcasty oraz angażuję się w popularyzację nauki.</p>
-    <ul>
-      <li><a href="https://bluemoon.edu.pl" target="_blank">Komiks „A Star is Born”</a></li>
-      <li><a href="https://open.spotify.com/show/4d5yHGs8ej1gTGt0pUtCSH?si=a221b03613e44acc" target="_blank">Podcast – Good Night Podcast</a> <img src="Spotify.png" alt="Spotify" style="height: 20px; vertical-align: middle; border-radius: 4px;" /></li>
-      <li><a href="#">Good Night Collective</a> <img src="GNC.jpg" alt="GNC" class="circle-logo" /></li>
-    </ul>
-  </section>
+    <!-- Media -->
+    <section id="media" class="wrapper style3 fade-up">
+      <div class="inner">
+        <h2>Media / Outreach</h2>
+        <p>Angażuję się w popularyzację nauki poprzez komiks, podcast, audycje radiowe i wydarzenia publiczne.</p>
+        <ul>
+          <li>🎙 Podcast <strong>Good Night Podcast</strong>: <a href="https://open.spotify.com/show/4d5yHGs8ej1gTGt0pUtCSH" target="_blank">Spotify</a> | sobota 13:00 w <a href="https://www.afera.com.pl/" target="_blank">Radio Afera</a></li>
+          <li>🖍 Komiks <strong>A Star is Born</strong>: <a href="https://bluemoon.edu.pl" target="_blank">bluemoon.edu.pl</a></li>
+          <li>🌌 <strong>Good Night Collective</strong>: interdyscyplinarna grupa łącząca sztukę i naukę</li>
+        </ul>
+        <div class="image"><img src="Asteroid.gif" alt="Asteroid animation"></div>
+      </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Karolina Dziadura
+    <!-- CV -->
+    <section id="cv" class="wrapper style1 fade-up">
+      <div class="inner">
+        <h2>CV</h2>
+        <p>Pobierz moje pełne CV w formacie PDF:</p>
+        <ul class="actions">
+          <li><a href="Resume_Dziadura.pdf" class="button primary">Pobierz CV</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; 2025 Karolina Dziadura. All rights reserved.</li>
+        <li>Design: HTML5 UP</li>
+      </ul>
+    </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>
