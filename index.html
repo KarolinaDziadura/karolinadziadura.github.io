@@ -3,20 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Karolina Dziadura – Astrophysicist at the Minor Planet Center, expert in asteroid orbit determination and Gaia data analysis." />
-  <title>Karolina Dziadura – Astrophysicist</title>
+  <meta name="description" content="Karolina Dziadura – Astrophysicist, researcher, science communicator." />
+  <title>Karolina Dziadura</title>
   <style>
-    body {
-      background-color: #e7f5ec;
-      color: #ffffff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
+    html {
+      scroll-behavior: smooth;
     }
-    .container {
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8fafc;
+      color: #1a202c;
+    }
+    header {
+      background-color: #e7f5ec;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #22543d;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
       max-width: 900px;
       margin: auto;
-      padding: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background-color: #edf2f7;
+      color: #4a5568;
     }
     .profile-pic {
       width: 180px;
@@ -24,20 +47,29 @@
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #b7e1cd;
+      display: block;
+      margin: 20px auto;
     }
-    h1 {
-      color: #22543d;
+    .circle-logo {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+    .gif-wrapper {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .gif-wrapper img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 12px;
     }
     h2 {
       color: #2f855a;
-      margin-top: 40px;
-    }
-    p, li {
-      color: #1a202c;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
     }
     a {
       color: #2f855a;
@@ -46,59 +78,72 @@
     a:hover {
       text-decoration: underline;
     }
-    .links {
-      margin-top: 20px;
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="Karolina_fot.jpg" alt="Karolina Dziadura" class="profile-pic">
+  <header>
     <h1>Karolina Dziadura, PhD</h1>
-    <p><strong>Postdoctoral Researcher at the Minor Planet Center,<br>Center for Astrophysics | Harvard & Smithsonian</strong></p>
-    <p>Email: <a href="mailto:karolina.dziadura@cfa.harvard.edu">karolina.dziadura@cfa.harvard.edu</a></p>
+    <p>Postdoctoral Researcher at the Minor Planet Center, Center for Astrophysics | Harvard & Smithsonian</p>
+    <nav>
+      <a href="#about">O mnie</a>
+      <a href="#research">Research</a>
+      <a href="#media">Media / Outreach</a>
+    </nav>
+  </header>
 
-    <p>Expert in asteroid dynamics, orbit determination, and Gaia astrometry. My work focuses on high-precision measurements and understanding non-gravitational forces like the Yarkovsky effect.</p>
-
-    <h2>Links</h2>
+  <section id="about">
+    <img src="Karolina_fot.jpg" alt="Karolina Dziadura" class="profile-pic" />
+    <h2>O mnie</h2>
+    <p>Jestem badaczką zajmującą się mechaniką nieba, astrometrią i orbitami planetoid. Pracuję jako postdoc w Minor Planet Center przy Center for Astrophysics | Harvard & Smithsonian. Prowadzę także podcast <a href="https://open.spotify.com/show/4d5yHGs8ej1gTGt0pUtCSH?si=a221b03613e44acc" target="_blank">Good Night Podcast</a> oraz audycję radiową w każdą sobotę o 13:00 w <a href="https://radioafera.com.pl" target="_blank">Radio Afera</a>.</p>
+    <p>Kontakt: <a href="mailto:karolina.dziadura@cfa.harvard.edu">karolina.dziadura@cfa.harvard.edu</a></p>
     <ul>
-      <li><a href="https://scholar.google.com/citations?user=DjDA58AAAAAJ&hl=pl&oi=ao" target="_blank">Google Scholar</a></li>
-      <li><a href="https://orcid.org/0000-0001-7562-9661" target="_blank">ORCID</a></li>
-      <li><a href="https://www.researchgate.net/profile/Karolina-Dziadura" target="_blank">ResearchGate</a></li>
-      <li><a href="https://open.spotify.com/show/4d5yHGs8ej1gTGt0pUtCSH?si=a221b03613e44acc" target="_blank">Podcast – Good Night Podcast</a></li>
-      <!--li><a href="https://bluemoon.edu.pl" target="_blank">Astro Comic – A Star is Born</a></li-->
-      <li><a href="https://www.cfa.harvard.edu/people/karolina-dziadura" target="_blank">My CfA Profile</a></li>
+      <li><a href="https://scholar.google.com/citations?user=DjDA58AAAAAJ&hl=pl&oi=ao">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0001-7562-9661">ORCID</a></li>
+      <li><a href="https://www.researchgate.net/profile/Karolina-Dziadura">ResearchGate</a></li>
+      <li><a href="https://www.cfa.harvard.edu/people/karolina-dziadura">CfA Profile</a></li>
     </ul>
 
-    <h2>Research Interests</h2>
-    <p>Asteroid orbit determination, photocenter-barycenter effect, Yarkovsky effect detection, Gaia DR3 data analysis, asteroid size estimation through stellar occultations.</p>
+    <div class="gif-wrapper">
+      <img src="Asteroid.gif" alt="Asteroid Animation">
+    </div>
+  </section>
 
-    <h2>Education</h2>
+  <section id="research">
+    <h2>Research</h2>
+    <p>Pobierz moje CV w PDF:</p>
+    <p><a href="CV_Dziadura.pdf" download>Pobierz CV</a></p>
+
+    <h3>5 wybranych publikacji:</h3>
     <ul>
-      <li>PhD in Astronomy, 2024 – Adam Mickiewicz University, Poznań</li>
-      <li>MSc in Astronomy, 2019</li>
-      <li>BSc in Astronomy, 2017</li>
+      <li>Detection of the Yarkovsky Effect Using Gaia Astrometry</li>
+      <li>The Photocenter-Barycenter Offset of Near-Earth Objects</li>
+      <li>Yarkovsky Drift Detectability Using Gaia DR2 Asteroid Astrometry</li>
+      <li>Computing the Yarkovsky Effect for Asteroids in Gaia DR3</li>
+      <li>Determining Asteroid Sizes Based on Stellar Occultations</li>
     </ul>
 
-    <h2>Selected Conferences & Talks</h2>
+    <h3>5 wybranych konferencji:</h3>
     <ul>
-      <li>NASA SBAG Meeting (2025) – Detection of the Yarkovsky Effect using Gaia</li>
-      <li>European Astronomical Society Annual Meeting (2023)</li>
+      <li>NASA SBAG Meeting (2025)</li>
       <li>Asteroids, Comets, Meteors Conference – Flagstaff (2023)</li>
+      <li>European Astronomical Society Annual Meeting (2023)</li>
+      <li>Europlanet Science Congress (2022)</li>
+      <li>AAS Division for Planetary Sciences Meeting (2021)</li>
     </ul>
+  </section>
 
-    <h2>Outreach</h2>
+  <section id="media">
+    <h2>Media / Outreach</h2>
+    <p>Tworzę komiksy naukowe, podcasty oraz angażuję się w popularyzację nauki.</p>
     <ul>
-      <li>Podcast creator – Good Night Podcast</li>
-      <li>Science communicator – Radio Afera</li>
-      <li>Public speaker – light pollution and asteroid research</li>
+      <li><a href="https://bluemoon.edu.pl" target="_blank">Komiks „A Star is Born”</a></li>
+      <li><a href="https://open.spotify.com/show/4d5yHGs8ej1gTGt0pUtCSH?si=a221b03613e44acc" target="_blank">Podcast – Good Night Podcast</a> <img src="spotify-logo.png" alt="Spotify" style="height: 20px; vertical-align: middle; border-radius: 4px;" /></li>
+      <li><a href="#">Good Night Collective</a> <img src="gnc-logo.png" alt="GNC" class="circle-logo" /></li>
     </ul>
+  </section>
 
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Python (Astropy, SciPy, Pandas), SQL, Jupyter, Git, LaTeX, OrbFit</li>
-      <li>Observational astronomy, orbital fitting, data analysis</li>
-    </ul>
-  </div>
+  <footer>
+    &copy; 2025 Karolina Dziadura
+  </footer>
 </body>
 </html>
