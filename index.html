@@ -1,102 +1,144 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Karolina Dziadura</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        .circle-img {
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .logo-circle {
-            border-radius: 50%;
-            background-color: white;
-            padding: 5px;
-        }
-        .spotify-logo {
-            width: 50px;
-            height: 50px;
-        }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Karolina Dziadura</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+  <style>
+    body {
+      background-color: #e6f2e6; /* stonowany zielony */
+    }
+    .wrapper h2, .wrapper h1 {
+      color: #22543d; /* ciemniejszy zielony */
+    }
+    .button, .button.primary {
+      background-color: #38a169 !important;
+      border: none;
+      color: white !important;
+    }
+    .button:hover {
+      background-color: #2f855a !important;
+    }
+    ul li::marker {
+      content: none;
+    }
+    ul li::before {
+      content: "• ";
+      color: #38a169;
+    }
+  </style>
 </head>
 <body class="is-preload">
-    <section id="sidebar">
-        <div class="inner">
-            <nav>
-                <ul>
-                    <li><a href="#intro">About</a></li>
-                    <li><a href="#science">Science</a></li>
-                    <li><a href="#media">Media/Outreach</a></li>
-                    <li><a href="#cv">CV</a></li>
-                </ul>
-            </nav>
-        </div>
+
+  <!-- Sidebar -->
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="#intro">O mnie</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#media">Media / Outreach</a></li>
+          <li><a href="#cv">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+      <div class="inner">
+        <h1>Karolina Dziadura, PhD</h1>
+        <p>Postdoctoral Researcher at the Minor Planet Center, Center for Astrophysics | Harvard & Smithsonian</p>
+        <p>Jestem astronomką zajmującą się orbitami planetoid, mechaniką nieba i analizą danych astrometrycznych. Współpracuję z zespołem Minor Planet Center w Cambridge (USA), analizując dane z misji Gaia.</p>
+        <p>Email: <a href="mailto:karolina.dziadura@cfa.harvard.edu">karolina.dziadura@cfa.harvard.edu</a></p>
+        <ul class="actions">
+          <li><a href="https://scholar.google.com/citations?user=DjDA58AAAAAJ&hl=pl&oi=ao" class="button">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0001-7562-9661" class="button">ORCID</a></li>
+          <li><a href="https://www.researchgate.net/profile/Karolina-Dziadura" class="button">ResearchGate</a></li>
+          <li><a href="https://www.cfa.harvard.edu/people/karolina-dziadura" class="button">CfA Profile</a></li>
+        </ul>
+        <div class="image"><img src="Karolina_fot.jpg" alt="Karolina Dziadura"></div>
+      </div>
     </section>
 
-    <div id="wrapper">
-        <section id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <img src="images/Karolina_fot.jpg" alt="Karolina Dziadura" width="200" height="200" class="circle-img">
-                <h1>Karolina Dziadura</h1>
-                <p>Postdoctoral researcher at the <a href="https://www.cfa.harvard.edu/people/karolina-dziadura">Center for Astrophysics | Harvard & Smithsonian</a>.<br>
-                I specialize in asteroid orbit determination, celestial mechanics, and astrometry. I am also experienced in telescope observations and data analysis using Gaia space telescope.</p>
-                <a href="https://open.spotify.com/user/31jnwre6vic477d44aky7hl7262m?si=0b8370a29f7f4068" target="_blank">
-                    <img src="images/Spotify.png" alt="Spotify" class="spotify-logo">
-                </a>
-            </div>
-        </section>
-
-        <section id="science" class="wrapper style2 spotlights">
-            <section>
-                <a href="#" class="image"><img src="images/Asteroid.gif" alt="Asteroid Animation" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Asteroid Research</h2>
-                        <p>My research focuses on high-precision orbit determination and the Yarkovsky effect using data from missions like Gaia. I aim to understand non-gravitational forces influencing small Solar System bodies.</p>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section id="media" class="wrapper style3 fade-up">
-            <div class="inner">
-                <h2>Media & Outreach</h2>
-                <p>I am part of the <strong>Good Night Collective</strong>, a science-art initiative blending creative storytelling with space science. I also co-host a science podcast aired on Radio Afera every Saturday at 13:00.</p>
-                <img src="images/GNC.jpg" alt="Good Night Collective" width="100" height="100" class="logo-circle">
-            </div>
-        </section>
-
-        <section id="cv" class="wrapper style1 fade-up">
-            <div class="inner">
-                <h2>Curriculum Vitae</h2>
-                <p>Below is my full CV in PDF format:</p>
-                <iframe src="images/Resume_Dziadura.pdf"></iframe>
-            </div>
-        </section>
-    </div>
-
-    <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-            <ul class="menu">
-                <li>&copy; Karolina Dziadura. All rights reserved.</li><li>Design inspired by <a href="http://html5up.net">HTML5 UP</a></li>
+    <!-- Research -->
+    <section id="research" class="wrapper style2 spotlights">
+      <section>
+        <div class="content">
+          <div class="inner">
+            <h2>Research</h2>
+            <p>Moje badania koncentrują się na analizie efektu Jarkowskiego, fotocentryczności i dokładności orbit planetoid. Wykorzystuję dane z misji Gaia, obserwacje naziemne oraz narzędzia takie jak OrbFit.</p>
+            <h3>Wybrane publikacje:</h3>
+            <ul>
+              <li>Dziadura et al. 2025 – A&A – Gaia DR3 i FPR, efekt Jarkowskiego</li>
+              <li>Dziadura et al. 2023 – A&A – Gęstości planetoid z Gaia</li>
+              <li>Dziadura et al. 2022 – Icarus – Najlepsze kandydatki Jarkowskiego</li>
+              <li>Leśniewska et al. 2022 – ApJS – GRB i ISM</li>
+              <li>Podlewska-Gaca et al. 2020 – A&A – Parametry mas planetoid</li>
             </ul>
+            <h3>Wybrane konferencje:</h3>
+            <ul>
+              <li>NASA SBAG Meeting – 2025</li>
+              <li>Asteroids, Comets, Meteors – Flagstaff 2023</li>
+              <li>EAS Annual Meeting – Kraków 2023</li>
+              <li>Europlanet Science Congress – 2022</li>
+              <li>DPS AAS Meeting – 2021</li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </section>
+    </section>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Media -->
+    <section id="media" class="wrapper style3 fade-up">
+      <div class="inner">
+        <h2>Media / Outreach</h2>
+        <p>Angażuję się w popularyzację nauki poprzez komiks, podcast, audycje radiowe i wydarzenia publiczne.</p>
+        <ul>
+          <li><strong>Good Night Podcast</strong>: <a href="https://open.spotify.com/show/4d5yHGs8ej1gTGt0pUtCSH" target="_blank">Spotify</a> | sobota 13:00 w <a href="https://www.afera.com.pl/" target="_blank">Radio Afera</a></li>
+          <li><strong>A Star is Born</strong> – komiks: <a href="https://bluemoon.edu.pl" target="_blank">bluemoon.edu.pl</a></li>
+          <li><strong>Good Night Collective</strong> – interdyscyplinarna grupa łącząca sztukę i naukę</li>
+        </ul>
+        <div class="image"><img src="Asteroid.gif" alt="Asteroid animation"></div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="wrapper style1 fade-up">
+      <div class="inner">
+        <h2>CV</h2>
+        <p>Pobierz moje pełne CV w formacie PDF:</p>
+        <ul class="actions">
+          <li><a href="Resume_Dziadura.pdf" class="button primary">Pobierz CV</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; 2025 Karolina Dziadura. All rights reserved.</li>
+        <li>Design: HTML5 UP</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>
